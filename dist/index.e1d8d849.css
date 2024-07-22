@@ -1,0 +1,128 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap";
+.roboto-regular-italic {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+body {
+  background: #666;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.card {
+  box-shadow: 2px 3x 10px #0003;
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.btn {
+  color: #42b983;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #42b983;
+  border-radius: 99px;
+  outline: none;
+  margin-right: 1rem;
+  padding: .5rem 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .22s;
+  position: relative;
+}
+
+.btn.primary {
+  color: #fff;
+  background: #42b983;
+}
+
+.btn:active {
+  box-shadow: inset 1px 1px 1px #0000004d;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.preview {
+  flex-wrap: wrap;
+  padding: .5rem;
+  display: flex;
+}
+
+.preview-image {
+  margin-bottom: .5rem;
+  margin-right: .5rem;
+  position: relative;
+}
+
+.preview-image.removing {
+  transition: transform .5s ease-in-out;
+  transform: scale(0);
+}
+
+.preview-image img {
+  width: 180px;
+  height: 100px;
+}
+
+.preview-image:hover .preview-remove, .preview-image:hover .preview-info {
+  opacity: 1;
+}
+
+.preview-remove {
+  cursor: pointer;
+  opacity: 0;
+  background: #ffffff80;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  transition: opacity .5s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.preview-info {
+  opacity: 0;
+  background: #ffffff80;
+  justify-content: space-between;
+  align-items: center;
+  height: 15px;
+  padding: 2px 10px;
+  font-size: .8rem;
+  transition: opacity .5s;
+  display: flex;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+}
+
+.preview-info-progress {
+  background: #42b983;
+  justify-content: center;
+  align-items: center;
+  transition: width .5s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=index.e1d8d849.css.map */
